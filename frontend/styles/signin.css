@@ -1,0 +1,78 @@
+
+        :root {
+            --bg-dark: #0C0E15;
+            --text-light: #ffffff;
+            --primary-color: #A66CFF;
+            --gradient-start: #9370FF;
+            --gradient-end: #DA44FF;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 1rem;
+        }
+
+        .auth-card {
+            background-color: rgba(33, 37, 41, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid #495057;
+            border-radius: 15px;
+            padding: 2rem;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .form-control {
+            background-color: #2d3238;
+            border: 1px solid #495057;
+            color: var(--text-light);
+        }
+
+        .form-control:focus {
+            background-color: #2d3238;
+            border-color: var(--primary-color);
+            color: var(--text-light);
+            box-shadow: 0 0 0 0.2rem rgba(166, 108, 255, 0.25);
+        }
+
+        .form-control::placeholder {
+            color: #6c757d;
+        }
+
+        .brand-logo {
+            font-weight: 700;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+        }
+
+        .error-message {
+            color: #dc3545;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            border: none;
+        }
+
+        .btn-primary:hover {
+            opacity: 0.9;
+        }
+
+        a.text-primary {
+            color: var(--primary-color);
+        }
+    
