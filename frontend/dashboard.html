@@ -39,13 +39,20 @@
             </div>
 
             <form id="scanForm">
-                <div class="mb-4">
-                    <input type="url" class="form-control" id="urlInput" placeholder="https://example.com" required>
-                </div>
-                <div class="text-center">
-                    <button type="submit" class="btn scan-button">🔍 Scan URL</button>
-                </div>
+              <div class="mb-4">
+                <input 
+                    type="text" 
+                    class="form-control" 
+                    id="urlInput" 
+                    placeholder="Enter URL or IP (e.g., https://example.com or 192.168.0.1)" 
+                    pattern="^(https?:\/\/)?(([a-zA-Z0-9\-]+\.)+[a-zA-Z]{2,}|(\d{1,3}\.){3}\d{1,3})(:\d+)?(\/.*)?$" 
+                    required >
+                    </div>
+                    <div class="text-center">
+                    <button type="submit" class="btn scan-button">🔍 Scan </button>
+                    </div>
             </form>
+
 
             <div class="text-center mt-4" id="loadingSpinner" style="display:none;">
                 <div class="spinner-border text-light" role="status"></div>
