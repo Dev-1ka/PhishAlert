@@ -72,4 +72,19 @@
         .welcome-text {
             color: #adb5bd;
         }
+
+        #urlInput {
+            background-color: white !important;
+            border: 1px solid #ccc;
+            color: black;
+        }
+
+        #urlInput:focus,
+        #urlInput:hover {
+            background-color: white !important;
+            border-color: #ccc;
+            box-shadow: none;
+            outline: none;
+        }
+
     
